@@ -7,6 +7,6 @@ http.createServer(function(request, response){
 		tekst: "Dit is nog steeds JSON"
 		});
 	response.end(json);
-}).listen(3000);
+}).listen(process.env.PORT || 3000);
 
-console.log('De server luistert op port 3000.');
+console.log('De server luistert op port 80 of 3000 ofzo, kijk maar.');
